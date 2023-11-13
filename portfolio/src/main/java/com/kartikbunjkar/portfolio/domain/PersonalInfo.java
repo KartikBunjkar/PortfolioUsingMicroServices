@@ -13,7 +13,7 @@ import jakarta.persistence.GenerationType;
 public class PersonalInfo {
 	
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	
 	@Column (name = "first_name")
 	private String firstName;
