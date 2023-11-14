@@ -2,6 +2,8 @@ package com.kartikbunjkar.portfolio.domain;
 
 import java.util.Objects;
 
+import org.springframework.stereotype.Component;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,7 +15,7 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	
 	@Column(name = "username")
 	private String userName;
@@ -21,11 +23,11 @@ public class User {
 	@Column(name = "password")
 	private String password;
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
